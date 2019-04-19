@@ -2,6 +2,11 @@
 use SimpleExcel\SimpleExcel;
 require_once('src/SimpleExcel/SimpleExcel.php');
 
+/*
+This Class fetches all Customers 
+from Magento API and export them in Excel Sheet
+*/
+
 class customerDataToExcel {
 
     protected $header = [];
