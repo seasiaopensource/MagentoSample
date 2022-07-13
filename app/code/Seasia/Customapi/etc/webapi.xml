@@ -1,0 +1,1002 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../app/code/Magento/Webapi/etc/webapi.xsd">
+
+	<!-- Get Frock Attributes and Type -->
+	<route url="/V1/gender/frock_type" method="GET">
+		<service class="Seasia\Customapi\Api\ProductInterface" method="getAttributeSetDetails"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Frock Size Object -->
+
+	<route url="/V1/gender/frock_size" method="GET">
+		<service class="Seasia\Customapi\Api\ProductInterface" method="getSizeDetails" />
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Upload Product Image -->
+
+	<route url="/V1/seller/product/upload" method="POST">
+		<service class="Seasia\Customapi\Api\ProductInterface" method="uploadImage"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Create Product -->
+	<route url="/V1/seller/product/create" method="POST">
+		<service class="Seasia\Customapi\Api\ProductInterface" method="createProduct"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Product -->
+	<route url="/V1/seller/product/get" method="POST">
+		<service class="Seasia\Customapi\Api\ProductInterface" method="getProduct"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Delete Product -->
+	<route url="/V1/seller/product/delete" method="POST">
+		<service class="Seasia\Customapi\Api\ProductInterface" method="deleteProduct"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Likes By Product Id -->
+    <route url="/V1/seller/product/getlikesbyproductId" method="POST">
+        <service class="Seasia\Customapi\Api\ProductInterface" method="getLikesByProductId"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <!-- Get Seller LIked Products -->
+    <route url="/V1/seller/getCustomerLikedProducts" method="POST">
+        <service class="Seasia\Customapi\Api\CustomerInterface" method="getCustomerLikedProducts"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+
+	<route url="/V1/seller/orders" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getList"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/stripeTransaction" method="GET">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="stripeTransaction"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/order/get" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getOrderDetails"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/order/soldshipment" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getSoldOrderShipment"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Add Shipment Tracking -->
+
+	<route url="/V1/seller/shipment/addtrack" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="addTracking"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Delete Shipment Tracking -->
+	<route url="/V1/seller/shipment/deletetrack" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="deleteTracking"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Shipment Carriers -->
+	<route url="/V1/seller/shipment/getCarriers" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getCarriers"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Ship Order -->
+	<route url="/V1/seller/order/ship" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="shipOrder"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Invoice Order -->
+	<route url="/V1/seller/order/invoice" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="invoiceOrder"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Seller Invoice Details -->
+	<route url="/V1/seller/order/getsellerinvoicedetails" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getSellerInvoiceDetails"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Buyer Invoice Details -->
+	<route url="/V1/seller/order/getbuyerinvoicedetails" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getBuyerInvoiceDetails"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<route url="/V1/seller/order/shipment" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getShipmentDetails"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+
+	<!-- Confirm Order Delivery -->
+	<route url="/V1/seller/order/confirm" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="confirmOrder"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/buyer/order/get" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getBuyerOrderDetails"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/frocks" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getFrocks"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/setVacation" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="setVacation"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/getVacation" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getVacation"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<route url="/V1/seller/orderAllStatus" method="GET">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="orderAllStatus"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/commission" method="GET">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="commission"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get All Discounts-->
+	<route url="/V1/seller/discounts" method="POST">
+		<service class="Seasia\Customapi\Api\DiscountInterface" method="discounts"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Add/Edit  Discount-->
+    <route url="/V1/seller/addeditdiscount" method="POST">
+        <service class="Seasia\Customapi\Api\DiscountInterface" method="addEditDiscount"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <!-- Delete  Discount-->
+    <route url="/V1/seller/deletediscount" method="POST">
+        <service class="Seasia\Customapi\Api\DiscountInterface" method="deleteDiscount"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <!-- Get  Discount by Id-->
+    <route url="/V1/seller/discount/get" method="POST">
+        <service class="Seasia\Customapi\Api\DiscountInterface" method="getDiscount"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+	<!-- Get Seller Addresses -->
+	<route url="/V1/seller/addresses" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getAddresses"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get  Address By Id-->
+	<route url="/V1/seller/addressbyid" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="addressById"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+	<!-- Add or Update Address -->
+	<route url="/V1/seller/customeraddress" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="customeraddress"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+	<!-- Delete Address -->
+	<route url="/V1/seller/deleteaddress" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="deleteAddress"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Seller Profile -->
+	<route url="/V1/seller/profile" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="profile"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Edit Seller Profile -->
+	<route url="/V1/seller/profile/edit" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="editProfile"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Upload Seller Profile Pic-->
+	<route url="/V1/seller/profile/uploadpic" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="editProfilePic"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Seller Profile Step 1 -->
+	<route url="/V1/seller/profile/steps/1/get" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getProfileStep1"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Update Seller Profile Step 1 -->
+	<route url="/V1/seller/profile/steps/1/update" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="updateProfileStep1"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Get Seller Profile Status -->
+	<route url="/V1/seller/profile/status" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="profileStatus"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Seller accept profile terms -->
+	<route url="/V1/seller/profile/terms" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="profileTerms"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Check Customer Password -->
+	<route url="/V1/seller/password/check" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="checkPassword"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Reset Customer Password -->
+	<route url="/V1/seller/password/reset" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="resetPassword"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+      
+	<!-- Get Product Details By Seller Customer Id  -->
+	<route url="/V1/seller/getproductdetailsbysellercustomerid" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getProductDetailsBySellerCustomerId"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get All Seller Product -->
+    <route url="/V1/seller/getallsellerproduct" method="POST">
+        <service class="Seasia\Customapi\Api\DiscountInterface" method="getSellerProducts"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <!-- Get Seller Discounted Products -->
+    <route url="/V1/seller/getalldiscountedproduct" method="POST">
+        <service class="Seasia\Customapi\Api\DiscountInterface" method="getDiscountedProducts"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <!-- Apply Discount To Products -->
+    <route url="/V1/seller/apply/discount" method="POST">
+        <service class="Seasia\Customapi\Api\DiscountInterface" method="applyDiscount"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    
+
+    <!-- Remove Discount From Products -->
+    <route url="/V1/seller/remove/discount" method="POST">
+        <service class="Seasia\Customapi\Api\DiscountInterface" method="removeDiscount"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+	<!-- Connect To Stripe Required Fields -->
+	<route url="/V1/seller/stripeFields" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="stripeFields"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Stripe Connected Url -->
+	<route url="/V1/seller/stripe" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="stripeConnectedUrl"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Save Stripe Seller -->
+	<route url="/V1/seller/savestripeseller" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="saveStripeSeller"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Ratings to seller -->
+	<route url="/V1/seller/myratings" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="myRatings"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Ratings by seller -->
+	<route url="/V1/seller/givenRatings" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="givenRatings"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Ratings by seller on ORder id-->
+	<route url="/V1/seller/order/rating/add" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="giveRating"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Edit Ratings by seller on Rating id-->
+	<route url="/V1/seller/order/rating/edit" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="editRating"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Delete Ratings by seller on ORder id-->
+	<route url="/V1/seller/order/rating/delete" method="POST">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="deleteRating"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Ratings by Id -->
+	<route url="/V1/seller/rating/get" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getRating"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- GEt Seller Questions -->
+	<route url="/V1/seller/questions" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="allQuestions"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- GEt Question By Id -->
+	<route url="/V1/seller/question/get" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="questionById"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- GEt Answers By Question Id -->
+	<route url="/V1/seller/question/getanswers" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="answersByQuestion"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Answer Question -->
+	<route url="/V1/seller/question/answer" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="answerQuestion"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Get Saved Cards -->
+	<route url="/V1/seller/cards" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="savedCards"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Delete Saved Cards -->
+	<route url="/V1/seller/cards/delete" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="deleteCards"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Saved Searches -->
+	<route url="/V1/seller/saved/search" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="savedSearches"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Saved Search by Id -->
+	<route url="/V1/seller/search/get" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="searchById"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Edit Saved Search -->
+	<route url="/V1/seller/search/edit" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="editSearch"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Delete Saved Searches -->
+	<route url="/V1/seller/search/delete" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="deleteSearch"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<route url="/V1/seller/followers" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="customerFollowers"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/following" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="customerFollowing"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<route url="/V1/seller/unfollow" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="customerUnfollow"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Set Offer Discount By Product Id -->
+
+	<route url="/V1/seller/setsellerofferdiscountbyproductid" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="setSellerOfferDiscountByProductId"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Offer Made -->
+
+	<route url="/V1/seller/offers" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="offers"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Offer Offer Received -->
+
+	<route url="/V1/seller/offersreceived" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="offersReceived"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Get Offer Made By Offer Id -->
+
+	<route url="/V1/seller/offermade" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="offermade"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Offer Recieved By Offer Id -->
+
+	<route url="/V1/seller/offerreceivedbyid" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="offerreceivedbyid"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Accept Offer By Offer Id -->
+
+	<route url="/V1/seller/acceptoffer" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="acceptOfferById"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Reject Offer By Offer Id -->
+
+	<route url="/V1/seller/rejectoffer" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="rejectOfferById"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Counter Offer By Offer Id -->
+
+	<route url="/V1/seller/counteroffer" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="counterOfferById"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Offer History By Offer Id -->
+
+	<route url="/V1/seller/offerHistory" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="offerHistory"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Shipping Rates BY Address Id -->
+
+	<route url="/V1/seller/shippingRates" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="shippingRates"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Make Offer Payment -->
+
+	<route url="/V1/seller/offerPayment" method="POST">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="offerPayment"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	
+
+	<!-- Get All Family Size -->
+
+	<route url="/V1/seller/familysize" method="POST">
+		<service class="Seasia\Customapi\Api\FamilyInterface" method="familysize"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Family Size by Id-->
+
+	<route url="/V1/seller/familysizebyid" method="POST">
+		<service class="Seasia\Customapi\Api\FamilyInterface" method="familysizebyid"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Add/Edit Family Size by Id -->
+
+	<route url="/V1/seller/addeditsize" method="POST">
+		<service class="Seasia\Customapi\Api\FamilyInterface" method="addeditsize"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Delete Family Size Id -->
+
+	<route url="/V1/seller/deletesize" method="POST">
+		<service class="Seasia\Customapi\Api\FamilyInterface" method="deletesize"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Size options by Gender-->
+
+	<route url="/V1/seller/sizebygender" method="GET">
+		<service class="Seasia\Customapi\Api\FamilyInterface" method="sizebygender"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>  
+
+	<!-- Get All Bundle Discounts for Seller Id-->
+
+	<route url="/V1/seller/bundlediscounts" method="POST">
+		<service class="Seasia\Customapi\Api\BundleDiscountInterface" method="bundleDiscounts"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Add/Edit Bundle Discount -->
+
+	<route url="/V1/seller/addeditbundlediscount" method="POST">
+		<service class="Seasia\Customapi\Api\BundleDiscountInterface" method="addEditBundleDiscount"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Delete Bundle Discount -->
+
+	<route url="/V1/seller/deletebundlediscount" method="POST">
+		<service class="Seasia\Customapi\Api\BundleDiscountInterface" method="deleteBundleDiscount"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Bundle Discount Data By id and Seller Id-->
+
+	<route url="/V1/seller/bundlediscountbyid" method="POST">
+		<service class="Seasia\Customapi\Api\BundleDiscountInterface" method="bundleDiscountbyid"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Get Store Config-->
+
+	<route url="/V1/store/config" method="GET">
+		<service class="Seasia\Customapi\Api\OrderInterface" method="getConfig"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Add Seller Review-->
+
+	<route url="/V1/seller/addReview" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="addReview"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Save Seller Notification Settings-->
+
+	<route url="/V1/seller/notificationsettings" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="notificationsettings"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Notification Settings-->
+
+	<route url="/V1/seller/getnotificationsettings" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getnotificationsettings"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Notification-->
+
+	<route url="/V1/seller/getnotification" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getNotification"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+   
+	<!-- Read Notification-->
+
+	<route url="/V1/seller/readnotification" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="readNotification"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Badges  -->
+
+	<route url="/V1/seller/getbadges" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getBadges"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Seller Badges  -->
+
+	<route url="/V1/seller/getsellerbadges" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getSellerBadges"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Get Email for  Email Verification Badge -->
+
+	<route url="/V1/seller/getEmailForEmailVerificationBadge" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="getEmailForEmailVerificationBadge"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Verify Email Badge -->
+
+	<route url="/V1/seller/verifyEmailBadge" method="POST">
+		<service class="Seasia\Customapi\Api\CustomerInterface" method="verifyEmailBadge"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Retuns Made by Seller -->
+
+	<route url="/V1/seller/returnsmade" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="returnsMade"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Retuns Received by Seller -->
+
+	<route url="/V1/seller/returnsreceived" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="returnsReceived"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Upload Retun Item Image -->
+
+	<route url="/V1/seller/uploadreturnimage" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="uploadReturnImage"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Create Retun From Buyer  -->
+
+	<route url="/V1/seller/createreturn" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="createReturn"/>
+		<resources>
+			<resource ref="anonymous" />
+		</resources>
+	</route>
+
+	<!-- Get Retun By Id  -->
+
+	<route url="/V1/seller/getreturn" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="getReturn"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Get Retun Comments  -->
+
+	<route url="/V1/seller/getreturncomments" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="getReturnComments"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Seller Offers on Return  -->
+
+	<route url="/V1/seller/offerreturn" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="offerReturn"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Accept Offer on Return  -->
+
+	<route url="/V1/seller/acceptreturnoffer" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="acceptReturnOffer"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Reject Offer on Return  -->
+
+	<route url="/V1/seller/rejectreturnoffer" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="rejectReturnOffer"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+
+	<!-- Ship Returned Item  -->
+
+	<route url="/V1/seller/returnshipped" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="returnshipped"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Process  Return  -->
+
+	<route url="/V1/seller/processreturn" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="processReturn"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- accept Return  -->
+
+	<route url="/V1/seller/approvereturn" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="approveReturn"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- reject Return  -->
+
+	<route url="/V1/seller/rejectreturn" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="rejectReturn"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Return Product  -->
+
+	<route url="/V1/seller/returnProduct" method="POST">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="returnProduct"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>	
+
+	<route url="/V1/seller/checkOrderInvoice" method="GET">
+		<service class="Seasia\Customapi\Api\OfferInterface" method="checkOrderInvoice"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>	
+
+	<!-- Return App Version  -->
+
+	<route url="/V1/seller/getReactAppVersion" method="GET">
+		<service class="Seasia\Customapi\Api\ReturnInterface" method="getReactAppVersion"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+	<!-- Return Color Object  -->
+
+	<route url="/V1/seller/getColorObj" method="GET">
+		<service class="Seasia\Customapi\Api\ColorInterface" method="getColorObj"/>
+		<resources>
+			<resource ref="self" />
+		</resources>
+	</route>
+
+</routes>

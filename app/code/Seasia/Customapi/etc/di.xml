@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+	<preference for="Magento\Framework\Webapi\ServiceOutputProcessor" type="Seasia\Customapi\Model\ServiceOutputProcessor" />
+	<preference for="Seasia\Customapi\Api\ProductInterface"
+		type="Seasia\Customapi\Model\Product" />
+		<preference for="Seasia\Customapi\Api\OrderInterface"
+			type="Seasia\Customapi\Model\Order" />
+			<preference for="Seasia\Customapi\Api\CustomerInterface"
+			type="Seasia\Customapi\Model\Customer" />
+
+			<preference for="Seasia\Customapi\Api\DiscountInterface"
+			type="Seasia\Customapi\Model\Discount" />
+
+			<preference for="Seasia\Customapi\Api\OfferInterface"
+			type="Seasia\Customapi\Model\Offer" />
+
+			<preference for="Seasia\Customapi\Api\FamilyInterface"
+			type="Seasia\Customapi\Model\Families" />
+
+			<preference for="Seasia\Customapi\Api\CustomerNewInterface"
+			type="Seasia\Customapi\Model\CustomerNew" />
+
+			<preference for="Seasia\Customapi\Api\BundleDiscountInterface"
+			type="Seasia\Customapi\Model\BundleDiscount" />
+
+			<preference for="Seasia\Customapi\Api\ReturnInterface" type="Seasia\Customapi\Model\ReturnItem" />
+
+			<preference for="Seasia\Customapi\Api\ColorInterface" type="Seasia\Customapi\Model\Color" />
+			
+			<preference for="Seasia\Customapi\Api\Data\ProductdataInterface" type="Seasia\Customapi\Model\Productmodel" />
+		</config>

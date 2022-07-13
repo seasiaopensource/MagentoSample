@@ -1,0 +1,657 @@
+[2019-07-09 14:00:42] main.DEBUG: array (
+  'request' => 
+  array (
+    'WebAuthenticationDetail' => 
+    array (
+      'UserCredential' => 
+      array (
+        'Key' => '****',
+        'Password' => '****',
+      ),
+    ),
+    'ClientDetail' => 
+    array (
+      'AccountNumber' => '510087380',
+      'MeterNumber' => '****',
+    ),
+    'Version' => 
+    array (
+      'ServiceId' => 'crs',
+      'Major' => '10',
+      'Intermediate' => '0',
+      'Minor' => '0',
+    ),
+    'RequestedShipment' => 
+    array (
+      'DropoffType' => 'REGULAR_PICKUP',
+      'ShipTimestamp' => '2019-07-09T14:00:40+00:00',
+      'PackagingType' => 'FEDEX_ENVELOPE',
+      'TotalInsuredValue' => 
+      array (
+        'Amount' => 250.0,
+        'Currency' => 'USD',
+      ),
+      'Shipper' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '90034',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'Recipient' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '30009',
+          'CountryCode' => 'US',
+          'Residential' => true,
+          'City' => 'Van Nuys',
+        ),
+      ),
+      'ShippingChargesPayment' => 
+      array (
+        'PaymentType' => 'SENDER',
+        'Payor' => 
+        array (
+          'AccountNumber' => '510087380',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'CustomsClearanceDetail' => 
+      array (
+        'CustomsValue' => 
+        array (
+          'Amount' => 250.0,
+          'Currency' => 'USD',
+        ),
+      ),
+      'RateRequestTypes' => 'LIST',
+      'PackageCount' => '1',
+      'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+      'RequestedPackageLineItems' => 
+      array (
+        0 => 
+        array (
+          'Weight' => 
+          array (
+            'Value' => 0.0,
+            'Units' => 'LB',
+          ),
+          'GroupPackageCount' => 1,
+        ),
+      ),
+      'ServiceType' => 'SMART_POST',
+      'SmartPostDetail' => 
+      array (
+        'Indicia' => 'PRESORTED_STANDARD',
+        'HubId' => NULL,
+      ),
+    ),
+  ),
+  'result' => 
+  stdClass::__set_state(array(
+     'HighestSeverity' => 'ERROR',
+     'Notifications' => 
+    stdClass::__set_state(array(
+       'Severity' => 'ERROR',
+       'Source' => 'prof',
+       'Code' => '1000',
+       'Message' => 'Authentication Failed',
+    )),
+     'Version' => 
+    stdClass::__set_state(array(
+       'ServiceId' => 'crs',
+       'Major' => 10,
+       'Intermediate' => 0,
+       'Minor' => 0,
+    )),
+  )),
+) [] []
+[2019-07-09 14:00:43] main.DEBUG: array (
+  'request' => 
+  array (
+    'WebAuthenticationDetail' => 
+    array (
+      'UserCredential' => 
+      array (
+        'Key' => '****',
+        'Password' => '****',
+      ),
+    ),
+    'ClientDetail' => 
+    array (
+      'AccountNumber' => '510087380',
+      'MeterNumber' => '****',
+    ),
+    'Version' => 
+    array (
+      'ServiceId' => 'crs',
+      'Major' => '10',
+      'Intermediate' => '0',
+      'Minor' => '0',
+    ),
+    'RequestedShipment' => 
+    array (
+      'DropoffType' => 'REGULAR_PICKUP',
+      'ShipTimestamp' => '2019-07-09T14:00:42+00:00',
+      'PackagingType' => 'FEDEX_ENVELOPE',
+      'TotalInsuredValue' => 
+      array (
+        'Amount' => 250.0,
+        'Currency' => 'USD',
+      ),
+      'Shipper' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '90034',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'Recipient' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '30009',
+          'CountryCode' => 'US',
+          'Residential' => true,
+          'City' => 'Van Nuys',
+        ),
+      ),
+      'ShippingChargesPayment' => 
+      array (
+        'PaymentType' => 'SENDER',
+        'Payor' => 
+        array (
+          'AccountNumber' => '510087380',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'CustomsClearanceDetail' => 
+      array (
+        'CustomsValue' => 
+        array (
+          'Amount' => 250.0,
+          'Currency' => 'USD',
+        ),
+      ),
+      'RateRequestTypes' => 'LIST',
+      'PackageCount' => '1',
+      'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+      'RequestedPackageLineItems' => 
+      array (
+        0 => 
+        array (
+          'Weight' => 
+          array (
+            'Value' => 0.0,
+            'Units' => 'LB',
+          ),
+          'GroupPackageCount' => 1,
+          'InsuredValue' => 
+          array (
+            'Amount' => 250.0,
+            'Currency' => 'USD',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'result' => 
+  stdClass::__set_state(array(
+     'HighestSeverity' => 'ERROR',
+     'Notifications' => 
+    stdClass::__set_state(array(
+       'Severity' => 'ERROR',
+       'Source' => 'prof',
+       'Code' => '1000',
+       'Message' => 'Authentication Failed',
+    )),
+     'Version' => 
+    stdClass::__set_state(array(
+       'ServiceId' => 'crs',
+       'Major' => 10,
+       'Intermediate' => 0,
+       'Minor' => 0,
+    )),
+  )),
+) [] []
+[2019-07-09 14:01:04] main.DEBUG: array (
+  'request' => 
+  array (
+    'WebAuthenticationDetail' => 
+    array (
+      'UserCredential' => 
+      array (
+        'Key' => '****',
+        'Password' => '****',
+      ),
+    ),
+    'ClientDetail' => 
+    array (
+      'AccountNumber' => '510087380',
+      'MeterNumber' => '****',
+    ),
+    'Version' => 
+    array (
+      'ServiceId' => 'crs',
+      'Major' => '10',
+      'Intermediate' => '0',
+      'Minor' => '0',
+    ),
+    'RequestedShipment' => 
+    array (
+      'DropoffType' => 'REGULAR_PICKUP',
+      'ShipTimestamp' => '2019-07-09T14:01:02+00:00',
+      'PackagingType' => 'FEDEX_ENVELOPE',
+      'TotalInsuredValue' => 
+      array (
+        'Amount' => 250.0,
+        'Currency' => 'USD',
+      ),
+      'Shipper' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '90034',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'Recipient' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '91405',
+          'CountryCode' => 'US',
+          'Residential' => true,
+          'City' => 'Van Nuys',
+        ),
+      ),
+      'ShippingChargesPayment' => 
+      array (
+        'PaymentType' => 'SENDER',
+        'Payor' => 
+        array (
+          'AccountNumber' => '510087380',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'CustomsClearanceDetail' => 
+      array (
+        'CustomsValue' => 
+        array (
+          'Amount' => 250.0,
+          'Currency' => 'USD',
+        ),
+      ),
+      'RateRequestTypes' => 'LIST',
+      'PackageCount' => '1',
+      'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+      'RequestedPackageLineItems' => 
+      array (
+        0 => 
+        array (
+          'Weight' => 
+          array (
+            'Value' => 0.0,
+            'Units' => 'LB',
+          ),
+          'GroupPackageCount' => 1,
+        ),
+      ),
+      'ServiceType' => 'SMART_POST',
+      'SmartPostDetail' => 
+      array (
+        'Indicia' => 'PRESORTED_STANDARD',
+        'HubId' => NULL,
+      ),
+    ),
+  ),
+  'result' => 
+  stdClass::__set_state(array(
+     'HighestSeverity' => 'ERROR',
+     'Notifications' => 
+    stdClass::__set_state(array(
+       'Severity' => 'ERROR',
+       'Source' => 'prof',
+       'Code' => '1000',
+       'Message' => 'Authentication Failed',
+    )),
+     'Version' => 
+    stdClass::__set_state(array(
+       'ServiceId' => 'crs',
+       'Major' => 10,
+       'Intermediate' => 0,
+       'Minor' => 0,
+    )),
+  )),
+) [] []
+[2019-07-09 14:01:05] main.DEBUG: array (
+  'request' => 
+  array (
+    'WebAuthenticationDetail' => 
+    array (
+      'UserCredential' => 
+      array (
+        'Key' => '****',
+        'Password' => '****',
+      ),
+    ),
+    'ClientDetail' => 
+    array (
+      'AccountNumber' => '510087380',
+      'MeterNumber' => '****',
+    ),
+    'Version' => 
+    array (
+      'ServiceId' => 'crs',
+      'Major' => '10',
+      'Intermediate' => '0',
+      'Minor' => '0',
+    ),
+    'RequestedShipment' => 
+    array (
+      'DropoffType' => 'REGULAR_PICKUP',
+      'ShipTimestamp' => '2019-07-09T14:01:04+00:00',
+      'PackagingType' => 'FEDEX_ENVELOPE',
+      'TotalInsuredValue' => 
+      array (
+        'Amount' => 250.0,
+        'Currency' => 'USD',
+      ),
+      'Shipper' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '90034',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'Recipient' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '91405',
+          'CountryCode' => 'US',
+          'Residential' => true,
+          'City' => 'Van Nuys',
+        ),
+      ),
+      'ShippingChargesPayment' => 
+      array (
+        'PaymentType' => 'SENDER',
+        'Payor' => 
+        array (
+          'AccountNumber' => '510087380',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'CustomsClearanceDetail' => 
+      array (
+        'CustomsValue' => 
+        array (
+          'Amount' => 250.0,
+          'Currency' => 'USD',
+        ),
+      ),
+      'RateRequestTypes' => 'LIST',
+      'PackageCount' => '1',
+      'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+      'RequestedPackageLineItems' => 
+      array (
+        0 => 
+        array (
+          'Weight' => 
+          array (
+            'Value' => 0.0,
+            'Units' => 'LB',
+          ),
+          'GroupPackageCount' => 1,
+          'InsuredValue' => 
+          array (
+            'Amount' => 250.0,
+            'Currency' => 'USD',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'result' => 
+  stdClass::__set_state(array(
+     'HighestSeverity' => 'ERROR',
+     'Notifications' => 
+    stdClass::__set_state(array(
+       'Severity' => 'ERROR',
+       'Source' => 'prof',
+       'Code' => '1000',
+       'Message' => 'Authentication Failed',
+    )),
+     'Version' => 
+    stdClass::__set_state(array(
+       'ServiceId' => 'crs',
+       'Major' => 10,
+       'Intermediate' => 0,
+       'Minor' => 0,
+    )),
+  )),
+) [] []
+[2019-07-09 14:01:28] main.DEBUG: array (
+  'request' => 
+  array (
+    'WebAuthenticationDetail' => 
+    array (
+      'UserCredential' => 
+      array (
+        'Key' => '****',
+        'Password' => '****',
+      ),
+    ),
+    'ClientDetail' => 
+    array (
+      'AccountNumber' => '510087380',
+      'MeterNumber' => '****',
+    ),
+    'Version' => 
+    array (
+      'ServiceId' => 'crs',
+      'Major' => '10',
+      'Intermediate' => '0',
+      'Minor' => '0',
+    ),
+    'RequestedShipment' => 
+    array (
+      'DropoffType' => 'REGULAR_PICKUP',
+      'ShipTimestamp' => '2019-07-09T14:01:26+00:00',
+      'PackagingType' => 'FEDEX_ENVELOPE',
+      'TotalInsuredValue' => 
+      array (
+        'Amount' => 250.0,
+        'Currency' => 'USD',
+      ),
+      'Shipper' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '90034',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'Recipient' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '91405',
+          'CountryCode' => 'US',
+          'Residential' => true,
+          'City' => 'Van Nuys',
+        ),
+      ),
+      'ShippingChargesPayment' => 
+      array (
+        'PaymentType' => 'SENDER',
+        'Payor' => 
+        array (
+          'AccountNumber' => '510087380',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'CustomsClearanceDetail' => 
+      array (
+        'CustomsValue' => 
+        array (
+          'Amount' => 250.0,
+          'Currency' => 'USD',
+        ),
+      ),
+      'RateRequestTypes' => 'LIST',
+      'PackageCount' => '1',
+      'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+      'RequestedPackageLineItems' => 
+      array (
+        0 => 
+        array (
+          'Weight' => 
+          array (
+            'Value' => 0.0,
+            'Units' => 'LB',
+          ),
+          'GroupPackageCount' => 1,
+        ),
+      ),
+      'ServiceType' => 'SMART_POST',
+      'SmartPostDetail' => 
+      array (
+        'Indicia' => 'PRESORTED_STANDARD',
+        'HubId' => NULL,
+      ),
+    ),
+  ),
+  'result' => 
+  stdClass::__set_state(array(
+     'HighestSeverity' => 'ERROR',
+     'Notifications' => 
+    stdClass::__set_state(array(
+       'Severity' => 'ERROR',
+       'Source' => 'prof',
+       'Code' => '1000',
+       'Message' => 'Authentication Failed',
+    )),
+     'Version' => 
+    stdClass::__set_state(array(
+       'ServiceId' => 'crs',
+       'Major' => 10,
+       'Intermediate' => 0,
+       'Minor' => 0,
+    )),
+  )),
+) [] []
+[2019-07-09 14:01:29] main.DEBUG: array (
+  'request' => 
+  array (
+    'WebAuthenticationDetail' => 
+    array (
+      'UserCredential' => 
+      array (
+        'Key' => '****',
+        'Password' => '****',
+      ),
+    ),
+    'ClientDetail' => 
+    array (
+      'AccountNumber' => '510087380',
+      'MeterNumber' => '****',
+    ),
+    'Version' => 
+    array (
+      'ServiceId' => 'crs',
+      'Major' => '10',
+      'Intermediate' => '0',
+      'Minor' => '0',
+    ),
+    'RequestedShipment' => 
+    array (
+      'DropoffType' => 'REGULAR_PICKUP',
+      'ShipTimestamp' => '2019-07-09T14:01:28+00:00',
+      'PackagingType' => 'FEDEX_ENVELOPE',
+      'TotalInsuredValue' => 
+      array (
+        'Amount' => 250.0,
+        'Currency' => 'USD',
+      ),
+      'Shipper' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '90034',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'Recipient' => 
+      array (
+        'Address' => 
+        array (
+          'PostalCode' => '91405',
+          'CountryCode' => 'US',
+          'Residential' => true,
+          'City' => 'Van Nuys',
+        ),
+      ),
+      'ShippingChargesPayment' => 
+      array (
+        'PaymentType' => 'SENDER',
+        'Payor' => 
+        array (
+          'AccountNumber' => '510087380',
+          'CountryCode' => 'US',
+        ),
+      ),
+      'CustomsClearanceDetail' => 
+      array (
+        'CustomsValue' => 
+        array (
+          'Amount' => 250.0,
+          'Currency' => 'USD',
+        ),
+      ),
+      'RateRequestTypes' => 'LIST',
+      'PackageCount' => '1',
+      'PackageDetail' => 'INDIVIDUAL_PACKAGES',
+      'RequestedPackageLineItems' => 
+      array (
+        0 => 
+        array (
+          'Weight' => 
+          array (
+            'Value' => 0.0,
+            'Units' => 'LB',
+          ),
+          'GroupPackageCount' => 1,
+          'InsuredValue' => 
+          array (
+            'Amount' => 250.0,
+            'Currency' => 'USD',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'result' => 
+  stdClass::__set_state(array(
+     'HighestSeverity' => 'ERROR',
+     'Notifications' => 
+    stdClass::__set_state(array(
+       'Severity' => 'ERROR',
+       'Source' => 'prof',
+       'Code' => '1000',
+       'Message' => 'Authentication Failed',
+    )),
+     'Version' => 
+    stdClass::__set_state(array(
+       'ServiceId' => 'crs',
+       'Major' => 10,
+       'Intermediate' => 0,
+       'Minor' => 0,
+    )),
+  )),
+) [] []

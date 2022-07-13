@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="seasia_expireoffer_cron_group">
+	
+        <job name="seasia_expireoffer_cronjob_expireoffer" instance="Seasia\Expireoffer\Cron\Expireoffer" method="execute">
+            <schedule>*/5 * * * *</schedule>
+        </job>
+		 
+    </group>
+</config>
